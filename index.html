@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweeft | Tazo</title>
+    <link rel="shortcut icon" href="images/Landing/newFav-icon-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src=" script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo--container">
+                <img src="images/Landing/logo-white-new.svg" alt="" class="nav__logo nav__logo--white">
+            </div>
+
+            <!-- <div class="nav__hamburger--btn"> -->
+            <svg class="nav__hamburger--btn" width="189px" height="189px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M4 18L20 18" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 12L20 12" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </svg>
+            <!-- </div> -->
+
+            <ul class="nav__menu--links">
+                <li><a class="mobile__menu--link" href="/services">services</a></li>
+                <li><a class="mobile__menu--link" href="/projects">projects</a></li>
+                <li><a class="mobile__menu--link" href="/careers">careers</a></li>
+                <li><a class="mobile__menu--link" href="/acceleration">acceleration</a></li>
+                <li><a class="mobile__menu--link" href="/insight">insight</a></li>
+                <li><a class="mobile__menu--link" href="/company">company</a></li>
+                <li><a class="mobile__menu--link link__btn" href="/contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile__menu--container">
+            <div class="mobile__menu--header">
+                <img src="images/Landing/logo-black-grad-full-txt.svg" alt="" class="nav__logo nav__logo--black">
+
+                <div class="menu__close--btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path
+                            d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="mobile__menu--links">
+                <li><a class="mobile__menu--link" href="/services">services</a></li>
+                <li><a class="mobile__menu--link" href="/projects">projects</a></li>
+                <li><a class="mobile__menu--link" href="/careers">careers</a></li>
+                <li><a class="mobile__menu--link" href="/acceleration">acceleration</a></li>
+                <li><a class="mobile__menu--link" href="/insight">insight</a></li>
+                <li><a class="mobile__menu--link" href="/company">company</a></li>
+                <li><a class="mobile__menu--link" href="/contact">contact</a></li>
+            </ul>
+
+            <div class="mobile__menu--footer">
+                <div class="social-links">
+                    <a href="" class="sweeft__linkedin ">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path class="header-social-icon"
+                                d="M22.286 0H1.70902C1.25318 0.00343638 0.817309 0.187469 0.49695 0.511765C0.17659 0.83606 -0.00211188 1.27415 1.88373e-05 1.73V22.27C-0.00211188 22.7258 0.17659 23.1639 0.49695 23.4882C0.817309 23.8125 1.25318 23.9966 1.70902 24H22.286C22.7424 23.9968 23.1789 23.813 23.5001 23.4888C23.8214 23.1646 24.0011 22.7264 24 22.27V1.73C24.0011 1.27361 23.8214 0.835379 23.5001 0.511169C23.1789 0.18696 22.7424 0.00317177 22.286 0V0ZM7.25402 20.571H3.70002V9.118H7.25902V20.572L7.25402 20.571ZM5.47502 7.554C5.06695 7.554 4.66805 7.43298 4.32877 7.20625C3.98949 6.97952 3.72507 6.65727 3.56896 6.28024C3.41285 5.90322 3.37205 5.48838 3.45173 5.08817C3.53141 4.68796 3.728 4.32037 4.01661 4.03189C4.30523 3.74341 4.67291 3.547 5.07316 3.46751C5.47341 3.38803 5.88824 3.42903 6.26519 3.58533C6.64213 3.74162 6.96426 4.00619 7.19083 4.34558C7.41739 4.68497 7.53822 5.08394 7.53802 5.492C7.53775 6.03897 7.32029 6.56345 6.93343 6.95012C6.54657 7.33679 6.02199 7.554 5.47502 7.554V7.554ZM20.587 20.572H17.03V15C17.03 13.671 17.003 11.962 15.182 11.962C13.328 11.962 13.045 13.408 13.045 14.903V20.571H9.48802V9.118H12.9V10.682H12.948C13.2905 10.0984 13.7847 9.61837 14.378 9.293C14.9714 8.96762 15.6418 8.80901 16.318 8.834C19.918 8.834 20.588 11.207 20.588 14.293L20.587 20.572Z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="" class="sweeft__facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path class="header-social-icon"
+                                d="M24,129.323v21.348a1.323,1.323,0,0,1-1.323,1.323H16.559v-9.289h3.118l.466-3.621H16.554V136.77c0-1.05.289-1.762,1.795-1.762h1.918v-3.241a25.784,25.784,0,0,0-2.8-.145c-2.764,0-4.661,1.688-4.661,4.789v2.673H9.68v3.621h3.129V152H1.323A1.326,1.326,0,0,1,0,150.677V129.323A1.326,1.326,0,0,1,1.323,128H22.671A1.327,1.327,0,0,1,24,129.323Z"
+                                transform="translate(0 -128)"></path>
+                        </svg>
+                    </a>
+
+                    <a href="" class="sweeft__instagram"><svg width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="header-social-icon"
+                                d="M1427.065-626a7.062,7.062,0,0,1-5.032-1.887,6.963,6.963,0,0,1-2.032-5.177v-9.92a6.628,6.628,0,0,1,7.016-7.016h9.968a6.89,6.89,0,0,1,5.08,1.984,6.936,6.936,0,0,1,1.936,5.032v9.968a6.926,6.926,0,0,1-1.984,5.129,7.145,7.145,0,0,1-5.08,1.887Zm-3.532-20.516a4.822,4.822,0,0,0-1.307,3.532v9.92a4.862,4.862,0,0,0,1.307,3.58,5,5,0,0,0,3.532,1.258h9.871a5,5,0,0,0,3.532-1.258,4.729,4.729,0,0,0,1.4-3.532v-9.968a4.992,4.992,0,0,0-1.307-3.484,4.823,4.823,0,0,0-3.532-1.306h-9.968A4.921,4.921,0,0,0,1423.533-646.516Zm2.274,8.468a6.205,6.205,0,0,1,6.193-6.193,6.237,6.237,0,0,1,6.194,6.193,6.205,6.205,0,0,1-6.194,6.194A6.174,6.174,0,0,1,1425.807-638.048Zm2.225,0A3.986,3.986,0,0,0,1432-634.08a3.986,3.986,0,0,0,3.968-3.968,3.986,3.986,0,0,0-3.968-3.968A3.986,3.986,0,0,0,1428.032-638.048Zm9-6.339a1.4,1.4,0,0,1,1.4-1.4,1.4,1.4,0,0,1,1.4,1.4,1.4,1.4,0,0,1-1.4,1.4A1.4,1.4,0,0,1,1437.032-644.387Z"
+                                transform="translate(-1420 650)"></path>
+                        </svg></a>
+                </div>
+
+                <p class="copy">Copyright © 2021 Sweeft Agency
+                </p>
+            </div>
+        </div>
+
+        <div class="landing__video--container">
+            <video autoplay muted loop class="landing__video--background">
+                <source src="images/Landing/34f50ded-1740-49e6-a0b9-aa0838d1379c.mp4">
+            </video>
+
+            <div class="landing__content--container">
+                <a href="">
+                    <h1 class="landing__title--primary">acceleration program started</h1>
+                </a>
+                <a href="">
+                    <h1 class="landing__title--secondary">explore open possitions here</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll__svg--container">
+            <a href="#">
+                <div class="scroll__svg">
+                    <div class="arrow" src="images/Landing/Scroll-arrow.svg" alt="">
+                    </div>
+                </div>
+            </a>
+            <p>scroll down</p>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="about__us--main">
+            <div class="what-we-do">
+                <p class="heading-p">this is what we do</p>
+                <h2>software development & marketing serices</h2>
+
+                <p>
+                    We believe that standing still equals moving backwards. So to keep up with the constantly expanding
+                    digital world and never stop accelerating, we gather the best talents from every digital field and
+                    work on nurturing and putting their skills to the best use we can.
+                </p>
+            </div>
+
+            <div class="core-services">
+                <div class="core__services--heading">
+                    <h2>core services</h2>
+                    <p>our services aretailoredto your digital needs</p>
+                </div>
+
+                <div class="core__services--carousel">
+                    <div class="carousel__slider splide" id="core__services">
+                        <div class="splide__track"> <!--splide__track-->
+                            <div class="slide__list splide__list"> <!--splide__list-->
+
+                                <div class="slide splide__slide">
+                                    <div class="slide__heading">
+                                        <img src="images/Landing/Custom-Software-Development.svg" alt="">
+                                        <h3>custom software development</h3>
+                                    </div>
+
+                                    <div class="slide__content ">
+                                        <p> Building complex enterprise level solution architecture and user orientated
+                                            products.</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="slide splide__slide">
+                                    <div class="slide__heading">
+                                        <img src="images/Landing/marketing-services.svg" alt="">
+                                        <h3> Marketing Services</h3>
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <p>We create marketing value through integrated solutions that offer you a 360º
+                                            results-oriented experience.</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="slide splide__slide">
+                                    <div class="slide__heading">
+                                        <img src="images/Landing/staff-augmentation.svg" alt="">
+                                        <h3> Staff Augmentation</h3>
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <p> Offering clients teams of developers aligned with their business needs.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+
+        <section class="clients">
+            <div class="clients__slider">
+                <h3>our clients</h3>
+                <ul class="clients__slider--list">
+                    <li>
+                        <img src="images/Landing/Landing Partners list/046ebfa9-6b4b-4193-a6ca-d33314fb0555.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="images/Landing/Landing Partners list/10f2f5ef-3be2-4302-bad8-c78808ac3372.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="images/Landing/Landing Partners list/11b2f7cc-08cb-4d72-830b-885975a44fcd.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="images/Landing/Landing Partners list/18b428f9-b7c2-406b-ac83-678827e1be50.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/29dfb85b-b503-4a1d-bab3-fb1a57044dad.png" alt="">
+
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/29fba039-e239-48d2-bd06-f9940c33563d.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/3f1e0f65-7fcb-4707-b8c4-e63c4485a90c.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/41dbf21a-b45e-45d4-bc79-1236c5414267.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/449e17b9-4809-4a01-a3df-b638437cbe53.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/45a607d1-4d66-4bcc-809a-29517c90ca9c.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/57253b8e-388b-4650-bbc4-9bc55361ae07.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/5e913715-c9b7-419e-8b47-619eac70f278.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/609b8557-2dfb-49d7-9ca1-00c8ea975337.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/73cf8908-b618-4c8d-88ce-cac2c8ec521a.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/787faeba-6bfa-4159-b702-dbbb264e04d9.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/7ce51fca-85e0-4d79-9ad4-30c9aa6889b5.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/8314daa7-4394-4e55-83a9-355af7d81d2a.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/8335f7ff-ebdc-48c5-9c0e-1dae6b458dc2.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/8b73ddb0-4770-465f-b4db-8a4458aca0f9.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/9f8fd329-6305-4bba-89af-b23fdc6f37c5.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/b948bc8f-c092-47ad-b64b-f725e6a93712.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/be874e82-b6de-4d23-a02d-c5348bbec57d.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/c104adb3-c98d-478b-a29c-43cb068fec90.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/c34b1630-5af4-441e-9143-0caf0f7e5211.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/ca09dc79-3a54-4847-b8ea-059a61ac1dc2.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/dbfe02c2-ac6d-4c3e-a86e-5aa936dfd2c5.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/Landing/Landing Partners list/f3e3365f-a63d-4aff-96bd-89ab02cb7dee.png" alt="">
+                    </li>
+                    <li>
+                        <img src=" images/Landing/Landing Partners list/f53b2a13-af81-4a09-9d6f-65d4ce7e8762.png"
+                            alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clients__feedback">
+                <h3>our clients about us</h3>
+
+                <div class="splide" id="clients__feedback">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/caousel-1.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>We are happy about the collaboration we are having with Sweeft. They help us
+                                            understand the requirements, define the timelines, develop the solutions and
+                                            do the follow-ups with the customers. We wish to grow together to be better
+                                            and more reliable partners.</p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author">david salviani</p>
+                                        <p class="position">head of product and delivery, BKN301</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            italy</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/carousel-2.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>We are extremely grateful to have Sweeft as our business partner. The team
+                                            has a unique perspective into the local market as well as the vision
+                                            required to guide banks through Open Banking. We want to thank you for all
+                                            your assistance and for being a collaborative business partner. </p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author">simon redfern, CEO</p>
+                                        <p class="position">CEO, TESOBE</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            germany</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/carousel-3.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>We are very excited to keep working with Sweeft. We will always consider them
+                                            as part of our team as Sweeft has proved that they're not just another
+                                            company but a partner who's helping us in every single aspect.</p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author">ehab hassouna</p>
+                                        <p class="position">Managing Partner, Cashflo</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            egypt</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/carousel-4.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>Sweeft was diligent, professional and very clear on communication throughout
+                                            the planning, building and post-build phases of Nutri Heroes. We look
+                                            forward to continuing working with them and are excited by the skills their
+                                            team brings. </p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author">edward fuller</p>
+                                        <p class="position">CEO, NUTRI HEROES</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            UK</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/carousel-5.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>Sweeft agency provided itself as a reliable provider of professional services
+                                            and delivered a number of solutions for our business. We are confident about
+                                            services of Sweeft agency and can surely recommend.</p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author">Anzor Mantskava</p>
+                                        <p class="position">CEO, EXTRA AREA</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            Georgia</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/carousel-6.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>Sweeft has been our stable partner providing us with creative marketing
+                                            solutions and innovative approaches. The team has proved to be a huge help
+                                            in long-run strategy planning as well as on a daily basis executing various
+                                            campaigns. We are happy to work with Sweeft in the future.&nbsp;&nbsp;</p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author"></p>
+                                        <p class="position">Imedi L</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            Georgia</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="splide__slide feedback__slide">
+                                <div class="client__logo">
+                                    <img src="images/Landing/carousel-7.png" alt="">
+                                </div>
+
+                                <div class="client__quote">
+                                    <div class="quote">
+                                        <p>Baskin Robbins team is glad to work with Sweeft. Sweeft is a reliable partner
+                                            for us. Always with creative ideas and professional group of people, who
+                                            provide a high quality services.</p>
+                                    </div>
+
+                                    <div class="client">
+                                        <p class="author">Elene Mariamidze</p>
+                                        <p class="position">Commercial Director, Baskin Robbins</p>
+                                        <p class="location"><span><img src="images/Landing/PinGreen.svg" alt=""></span>
+                                            Georgia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="outlook">
+            <div class="outlook__wrapper">
+
+                <div class="outlook__top">
+                    <h3 class="outlook__heading">CIO outlook:</h3>
+
+                    <p class="outlook__p">Economic Challanges and Outsourcing</p>
+
+                    <p class="outlook__p">2022-23 Report</p>
+                </div>
+
+                <div class="outlook__bottom">
+                    <h3 class="outlook__heading">Take a look at our report to understand current challenges and move
+                        forward</h3>
+
+                    <p class="outlook__sm">1,000 US-Based C-Level Executives Surveyed</p>
+
+                    <a href="" class="outlook__btn">read now</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="insights">
+            <div class="insights__wrapper">
+                <div class="insights__heading">
+                    <h3>insights</h3>
+                    <p>discover our perspective and innovations stories</p>
+                </div>
+
+                <div class="insights__carousel--wrapper splide" id="second__slider">
+                    <div class="insights__carousel--track splide__track">
+                        <div class="insight__carousel--list splide__list">
+
+                            <div class="carousel__card--wrapper splide__slide">
+                                <img src="images/Landing/augmentation.png" alt="" class="carousel__img">
+
+                                <div class="carousel__content">
+                                    <div class="content__top">
+                                        Q&A staff augmetation with levan kobakhidze
+                                    </div>
+
+                                    <div class="content__bottom">
+                                        <p>05 apr 2023</p>
+
+                                        <a href="">read more <span><img src="images/Landing/insight-Arrow-right.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel__card--wrapper splide__slide">
+                                <img src="images/Landing/augmentation.png" alt="" class="carousel__img">
+
+                                <div class="carousel__content">
+                                    <div class="content__top">
+                                        how staff augmentation benefit your business
+                                    </div>
+
+                                    <div class="content__bottom">
+                                        <p>17 jan 2023</p>
+
+                                        <a href="">read more <span><img src="images/Landing/insight-Arrow-right.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel__card--wrapper splide__slide">
+                                <img src="images/Landing/predictions.png" alt="" class="carousel__img">
+
+                                <div class="carousel__content">
+                                    <div class="content__top">
+                                        top 5 SEO predictions for 2023
+                                    </div>
+
+                                    <div class="content__bottom">
+                                        <p>28 dec 202</p>
+
+                                        <a href="">read more <span><img src="images/Landing/insight-Arrow-right.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__section--top">
+                <div class="footer__contact--wrapper">
+                    <div class="footer__contact--top">
+                        <div class="contact__left">
+                            <img src="images/Landing/footer/Eyes.svg" alt="">
+
+                            <p>we're hiring!</p>
+
+                            <span>check the careers page for the latest positions</span>
+                        </div>
+
+                        <a href="" class="footer__btn">careers</a>
+                    </div>
+                    <div class="footer__contact--bottom">
+                        <div class="contact__right">
+                            <img src="images/Landing/footer/Chat.svg" alt="">
+
+                            <p>drop us a line...</p>
+
+                            <span>like to sicuss a project? or get to know us better?</span>
+                        </div>
+
+                        <a href="" class="footer__btn">contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__section--bottom">
+                <p>Copyright © 2021 Sweeft Agency</p>
+                <img src="images/Landing/logo-white-new.svg" alt="">
+
+                <ul class="footer__socials">
+                    <li><a href=""><img src="images/Landing/footer/linkedin.svg" alt=""></a></li>
+                    <li><a href=""><img src="images/Landing/footer/facebook.svg" alt=""></a></li>
+                    <li><a href=""><img src="images/Landing/footer/Instagram.svg" alt=""></a></li>
+                    <li><a href=""><img src="images/Landing/footer/Tiktok.svg" alt=""></a></li>
+                    <li><a href=""><img src="images/Landing/footer/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+</body>
+
+</html>
